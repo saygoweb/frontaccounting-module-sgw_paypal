@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7c828a4f7d117b594ff0c077fb1fc07a",
+    "content-hash": "6cb7a5f3db5786c52efa587a0b147d5e",
+    "packages": [
+        {
+            "name": "saygoweb/sgw_base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saygoweb/sgw_base.git",
+                "reference": "90482c97d7b07d7bfd0cef5ff8d06be17fdf2e2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saygoweb/sgw_base/zipball/90482c97d7b07d7bfd0cef5ff8d06be17fdf2e2c",
+                "reference": "90482c97d7b07d7bfd0cef5ff8d06be17fdf2e2c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SGW_Base\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Arbitrary base conversion",
+            "support": {
+                "source": "https://github.com/saygoweb/sgw_base/tree/master",
+                "issues": "https://github.com/saygoweb/sgw_base/issues"
+            },
+            "time": "2016-08-28 15:16:08"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "saygoweb/sgw_base": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

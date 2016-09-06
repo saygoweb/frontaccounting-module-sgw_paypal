@@ -1,0 +1,14 @@
+{
+    "name": "saygoweb/frontaccounting-module-sgw_paypal",
+    "description": "Sample landing page for the Paypal payment method module for FrontAccounting",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SGW_Landing\\": "src/"
+        }
+    },
+    "require": {
+        "twitter/bootstrap": "3.x"
+    }
+}

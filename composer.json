@@ -1,0 +1,21 @@
+{
+    "name": "saygoweb/frontaccounting-module-sgw_paypal",
+    "description": "Paypal payment method module for FrontAccounting",
+    "type": "project",
+    "license": "GPLV3",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/saygoweb/sgw_base.git"
+        }
+    ],
+    "require": {
+        "saygoweb/sgw_base": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "SGW\\": "includes/",
+            "SGW_Paypal\\": "includes/"
+        }
+    }
+}
