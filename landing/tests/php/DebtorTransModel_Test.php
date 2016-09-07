@@ -27,6 +27,7 @@ EOD;
 		if (!$result) {
 			throw new \Exception($db->error);
 		}
+		// Swallow the multiple results from multi_query
 		do {} while ($db->next_result());
 	}
 	
@@ -40,6 +41,7 @@ EOD;
 		if (!$result) {
 			throw new \Exception($db->error);
 		}
+		// Swallow the multiple results from multi_query
 		do {} while ($db->next_result());
 	}
 	
