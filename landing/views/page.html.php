@@ -7,9 +7,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
-<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.min.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
+<link rel="stylesheet" type="text/css" href="<?= $moduleRoot ?>/landing/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="<?= $moduleRoot ?>/landing/assets/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="<?= $moduleRoot ?>/landing/assets/css/site.css" />
 
 <title>Invoice Payment</title>
 
@@ -25,7 +25,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="/assets/images/sgw-logo.png" style="height: 28px;margin-top:-6px"/></a>
+				<a class="navbar-brand" href="#"><img src="<?= $moduleRoot ?>/landing/assets/images/sgw-logo.png" style="height: 28px;margin-top:-6px"/></a>
 				<a class="navbar-brand" href="#">Project name</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
@@ -64,8 +64,9 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="/assets/js/jquery-1.10.2.min.js"></script><script src="/assets/js/bootstrap.min.js"></script>
+	<script src="<?= $moduleRoot ?>/landing/assets/js/jquery-1.10.2.min.js"></script>
+	<script src="<?= $moduleRoot ?>/landing/assets/js/bootstrap.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="<?= $moduleRoot ?>/landing/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

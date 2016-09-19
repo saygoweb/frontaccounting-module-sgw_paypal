@@ -9,10 +9,16 @@ require_once(ROOT_PATH . '/config_db.php');
 
 MySQLConnection::connection('default', $db_connections[0]);
 
-$reference = trim($_SERVER['PATH_INFO'], '/');
+// var_dump($_SERVER);
+$reference = '';
+if (array_key_exists('PATH_INFO', $_SERVER)) {
+	$reference = trim($_SERVER['PATH_INFO'], '/');
+}
 
 $invoice = new DebtorTransModel();
 $invoice->read($reference);
+
+// var_dump($invoice);
 
 $view = new View('page');
 
@@ -22,6 +28,7 @@ $cart = new View('cart');
 $cart->set('invoice', $invoice);
 $cart->set('paynow', $button);
 $view->set('content', $cart->renderString());
+$view->set('moduleRoot', '/modules/sgw_paypal');
 
 $view->render();
 

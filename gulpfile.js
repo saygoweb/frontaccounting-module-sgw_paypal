@@ -34,7 +34,7 @@ var execute = function(command, options, callback) {
 };
 
 var paths = {
-  src: ['htdocs/**/*.inc', 'htdocs/**/*.php', '!htdocs/vendor/**'],
+  src: ['**/*.php', '!vendor/**'],
   testE2E: ['tests/e2e/**/*.js'],
   testUnit: ['tests/php/**/*.php']
 };
@@ -57,9 +57,10 @@ gulp.task('reload', function() {
     if (err) {
       return console.log(err);
     }
-    gulp.watch(srcTheme, [ 'do-reload' ]);
+    gulp.watch(paths['src'], [ 'do-reload' ]);
   });
 });
+
 
 gulp.task('package-zip', function(cb) {
   var options = {
