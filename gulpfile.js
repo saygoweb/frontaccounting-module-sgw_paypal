@@ -34,7 +34,7 @@ var execute = function(command, options, callback) {
 };
 
 var paths = {
-  src: ['**/*.php', '!vendor/**'],
+  src: ['landing/**/*.php', '!vendor/**'],
   testE2E: ['tests/e2e/**/*.js'],
   testUnit: ['tests/php/**/*.php']
 };
@@ -49,7 +49,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('do-reload', function() {
-  return gulp.src('htdocs/wp/index.php').pipe(livereload(server));
+  return gulp.src('landing/index.php').pipe(livereload(server));
 });
 
 gulp.task('reload', function() {
