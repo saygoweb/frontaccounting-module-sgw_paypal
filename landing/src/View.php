@@ -36,6 +36,13 @@ class View
 		return $this->_path . '/' . $this->_view . '.html.php';
 	}
 	
+	public static function number($number, $delimiter = '.', $currencySymbol = '$') {
+		$tokens = explode($delimiter, $number);
+		$html = '<span class="left"><span class="currency">' . $currencySymbol . '</span>' .
+		$tokens[0] . '</span><span class="right">' . $delimiter . $tokens[1] . '</span>';
+		return $html;
+	}
+	
 	private $_view;
 	
 	private $_path;

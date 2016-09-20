@@ -1,4 +1,5 @@
 <?php
+use SGW_Landing\View;
 // use SGW_Landing\DebtorTransModel;
 // $cart = new DebtorTransModel()
 ?>
@@ -21,7 +22,7 @@ Reference: <?= $invoice->reference ?>
 <?php foreach($invoice->_items as $item): ?>
 <tr>
 <td><?= $item->description ?></td>
-<td><?= $item->unitPrice ?></td>
+<td class="char-align"><?= View::number($item->unitPrice) ?></td>
 <td><?= $item->quantity ?></td>
 </tr>
 <?php endforeach; ?>

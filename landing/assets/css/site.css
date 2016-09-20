@@ -37,3 +37,27 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+/* Number format */
+td.char-align {
+	width: 6em;
+}
+
+td.char-align span.left {
+	float: left;
+	text-align: right;
+	width: 3em;
+}
+
+td.char-align span.currency {
+	float: left;
+	text-align: left;
+	width: 1em;
+}
+
+td.char-align span.right {
+	float: right;
+	text-align: left;
+	width: 2em;
+}
+
